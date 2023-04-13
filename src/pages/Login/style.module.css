@@ -1,0 +1,48 @@
+
+.container{
+    width: 100vw;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    background-image: linear-gradient(to right, black , gray);
+}
+
+.main{
+    border-radius: 7px;
+    backdrop-filter: blur(4px);
+    background-color: rgb(16, 16, 19);
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.title{
+    margin: 0;
+    font-size: 28px;
+}
+
+.formGroup{
+   display: flex;
+   flex-direction: column;
+   gap: 5px;
+   width: 300px;
+}
+
+.input{
+    border-radius: 7px;
+    border: none;
+    padding: 4px;
+}
+
+.login{
+    padding: 8px;
+    background-color: rgb(69, 69, 73);
+    color: rgb(170, 170, 185);
+    font-weight: 700;
+}
+
