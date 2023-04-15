@@ -1,0 +1,12 @@
+
+ .input{
+     border-radius: 7px;
+     border: none;
+     padding: 4px;
+ }
+
+ .messageError{
+    color: red;
+    font-size: 10px;
+    font-weight: 700;
+ }
