@@ -1,0 +1,89 @@
+.grid{
+    display: grid;
+
+}
+
+.box{
+    background-color: rgb(93, 90, 97);
+    border-radius: 7px;
+    padding: 1.3rem;
+
+    box-shadow: 0.3rem 0.4rem 2.6rem black;
+
+    color:white;
+    gap: 0.8rem;
+}
+
+.title{
+    font-weight: 600;
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+.body{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.percent{
+    margin: 0;
+    padding: 0;
+    font-size: 2rem;
+    line-height: 2.2rem;
+}
+
+.percentGoal{
+    margin: 0;
+    padding: 0;
+    line-height: 2.5rem;
+}
+
+.bottom{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: auto;
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+
+.item{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 0.8rem;
+}
+
+.grafico{
+    width: 8rem;
+    height: 8rem;
+    transform: rotate(-90deg);
+}
+
+.grafico circle{
+    stroke-dasharray: 618;
+    stroke-dashoffset: 618;
+    stroke-width: 35;
+    fill:none
+}
+
+.grafico circle:nth-child(1){
+    stroke-dashoffset: 0;
+}
+
+.grafico circle:nth-child(2){
+    stroke-dashoffset: calc(618 - (618 * var(--percentage)) / 100 );
+}
+
+
